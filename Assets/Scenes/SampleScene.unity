@@ -1301,6 +1301,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845813287048943848, guid: 6e8e01e3ebe28ba47b2078335702cca2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3395734317799816074, guid: 6e8e01e3ebe28ba47b2078335702cca2,
         type: 3}
       propertyPath: enemyValue
@@ -1494,8 +1499,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1716,7 +1721,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1319712906
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1976,7 +1981,7 @@ MonoBehaviour:
   playerBase: {fileID: 860839400}
   playerInputField: {fileID: 1500455886}
   sendButton: {fileID: 1581627888}
-  restartButton: {fileID: 0}
+  restartButton: {fileID: 1499549630}
   tmpRanking: {fileID: 1268837610}
   ranking:
     scores: []
@@ -2197,19 +2202,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1499549631}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1468770139}
-        m_TargetAssemblyTypeName: SendScore, Assembly-CSharp
-        m_MethodName: OnSendButtonClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1499549631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2505,19 +2498,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1581627889}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1468770139}
-        m_TargetAssemblyTypeName: SendScore, Assembly-CSharp
-        m_MethodName: OnSendButtonClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1581627889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3130,7 +3111,7 @@ PrefabInstance:
     - target: {fileID: 1551997075568859104, guid: 1aa7c69d90614554c9e0dcd6ac8857cb,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3222,6 +3203,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845813287048943848, guid: 6e8e01e3ebe28ba47b2078335702cca2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3395734317799816074, guid: 6e8e01e3ebe28ba47b2078335702cca2,
         type: 3}
