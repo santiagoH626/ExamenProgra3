@@ -4,9 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class ScoreModel
+public class RankingModel
 {
-    public string username;
-    public int score;
-    public string date_time;
+    public ScoreModel[] scores;
 }

@@ -37,7 +37,8 @@ public class PlayerBase : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             //Fin
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            Destroy(gameObject);
         }
     }
     public void SpendMoney(int amount)
@@ -47,5 +48,8 @@ public class PlayerBase : MonoBehaviour
     public void GetMoney(int amount)
     {
         money += amount; 
+    }
+    public void GetScore(){
+        score++;
     }
 }

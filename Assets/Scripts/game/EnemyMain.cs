@@ -46,8 +46,10 @@ public class EnemyMain : MonoBehaviour
         }
 
         if (life <= 0)
-        {
-            playerBase.GetMoney(enemyValue);
+        {   
+            if (playerBase!=null){
+                playerBase.GetMoney(enemyValue);
+            }
             Destroy(gameObject);
         }
         if (unvulnerable)
